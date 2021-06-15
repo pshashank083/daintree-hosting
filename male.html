@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+   
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="row row-content">
+            <div class="col-12">
+                <form>
+                    <div class="form-group row">
+                        <label for="faceType" class="col-3 col-form-label">Face Type:</label> 
+                        <div class="col-md-12">
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/mens_face_type/diamond.jpg"  height="200px">Diamond</label>
+                                <input type="radio" name="faceType" id="diamond" value="diamond" >
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/mens_face_type/heart.jpg"  height="200px">Heart</label>
+                                <input type="radio" name="faceType" id="heart" value="heart">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/mens_face_type/oval.jpg"  height="200px">Oval</label>
+                                <input type="radio" name="faceType" id="oval" value="oval">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/mens_face_type/rectangle.jpg"  height="200px">Rectangle</label>
+                                <input type="radio" name="faceType" id="rectangle" value="rectangle">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/mens_face_type/round.jpg"  height="200px">Round</label>
+                                <input type="radio" name="faceType" id="round" value="round">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/mens_face_type/square.jpg"  height="200px">Square</label>
+                                <input type="radio" name="faceType" id="square" value="square">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-5">
+                        <label for="faceTone" class="col-3 col-form-label">Face Tone:</label> 
+                        <div class="col-md-12">
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/mens_face_tone/cocoa.jpg"  height="200px">Cocoa</label>
+                                <input type="radio" name="faceTone" id="cocoa" value="cocoa" >
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/mens_face_tone/dark.jpg"  height="200px">Dark</label>
+                                <input type="radio" name="faceTone" id="dark" value="dark">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/mens_face_tone/fair.jpg"  height="200px">Fair</label>
+                                <input type="radio" name="faceTone" id="fair" value="fair">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/mens_face_tone/honey.jpg"  height="200px">Honey</label>
+                                <input type="radio" name="faceTone" id="honey" value="honey">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/mens_face_tone/ivory.jpg"  height="200px">Ivory</label>
+                                <input type="radio" name="faceTone" id="ivory" value="ivory">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/mens_face_tone/latte.jpg"  height="200px">Latte</label>
+                                <input type="radio" name="faceTone" id="latte" value="latte">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/mens_face_tone/light.jpg"  height="200px">Light</label>
+                                <input type="radio" name="faceTone" id="light" value="light">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/mens_face_tone/tan.jpg"  height="200px">Tan</label>
+                                <input type="radio" name="faceTone" id="tan" value="tan">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-5">
+                        <label for="bodyType" class="col-3 col-form-label">Body Type:</label> 
+                        <div class="col-md-12">
+                            <div class="form-check form-check-inline">
+                                <label for="bodyType"><img src="/img/mens_body_type/athletic.jpg"  height="200px">Athletic</label>
+                                <input type="radio" name="bodyType" id="athletic" value="athletic" >
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="bodyType"><img src="/img/mens_body_type/average.jpg"  height="200px">Average</label>
+                                <input type="radio" name="bodyType" id="average" value="average">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="bodyType"><img src="/img/mens_body_type/husky.jpg"  height="200px">Husky</label>
+                                <input type="radio" name="bodyType" id="husky" value="husky">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="bodyType"><img src="/img/mens_body_type/slim.jpg"  height="200px">Slim</label>
+                                <input type="radio" name="bodyType" id="slim" value="slim">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-3">
+                        <div class="offset-2  col-md-2">
+                            <input type="button" class="btn btn-lg btn-secondary" onclick="indexPage();" value="Cancel" id="cancel">
+                        </div>
+                        <div class="col-md-2">
+                            <input type="button" class="btn btn-lg btn-primary" onclick="submitForm();" value="Submit" id="submit" href="/">                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

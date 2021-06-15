@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="row row-content">
+            <div class="col-12">
+                <form>
+                    <div class="form-group row">
+                        <label for="faceType" class="col-3 col-form-label">Face Type:</label> 
+                        <div class="col-md-12">
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/womans_face_type/circle.jpg" alt="I'm sad" height="200px">Circle</label>
+                                <input type="radio" name="faceType" id="circle" value="circle">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/womans_face_type/diamond.jpg" alt="I'm sad" height="200px">Diamond</label>
+                                <input type="radio" name="faceType" id="diamond" value="diamond">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/womans_face_type/oval.jpg" alt="I'm sad" height="200px">Oval</label>
+                                <input type="radio" name="faceType" id="oval" value="oval">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/womans_face_type/round.jpg" alt="I'm sad" height="200px">Round</label>
+                                <input type="radio" name="faceType" id="round" value="round">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/womans_face_type/square.jpg" alt="I'm sad" height="200px">Square</label>
+                                <input type="radio" name="faceType" id="square" value="square">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceType"><img src="/img/womans_face_type/triangle.jpg" alt="I'm sad" height="200px">Triangle</label>
+                                <input type="radio" name="faceType" id="triangle" value="triangle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-5">
+                        <label for="faceTone" class="col-3 col-form-label">Face Tone:</label> 
+                        <div class="col-md-12">
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/womans_face_tone/dark.jpg" alt="I'm sad" height="200px">Dark</label>
+                                <input type="radio" name="faceTone" id="dark" value="dark">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/womans_face_tone/exotic.jpg" alt="I'm sad" height="200px">Exotic</label>
+                                <input type="radio" name="faceTone" id="exotic" value="exotic">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/womans_face_tone/medium.jpg" alt="I'm sad" height="200px">Medium</label>
+                                <input type="radio" name="faceTone" id="medium" value="medium">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/womans_face_tone/normal.jpg" alt="I'm sad" height="200px">Normal</label>
+                                <input type="radio" name="faceTone" id="normal" value="normal">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/womans_face_tone/light.jpg" alt="I'm sad" height="200px">Light</label>
+                                <input type="radio" name="faceTone" id="light" value="light">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="faceTone"><img src="/img/womans_face_tone/tan.jpg" alt="I'm sad" height="200px">Tan</label>
+                                <input type="radio" name="faceTone" id="tan" value="tan">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-5">
+                        <label for="bodyType" class="col-3 col-form-label">Body Type:</label> 
+                        <div class="col-md-12">
+                            <div class="form-check form-check-inline">
+                                <label for="bodyType"><img src="/img/womans_body_type/apple.jpg" alt="I'm sad" height="200px">Apple</label>
+                                <input type="radio" name="bodyType" id="apple" value="apple">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="bodyType"><img src="/img/womans_body_type/fullHourGlass.jpg" alt="I'm sad" height="200px">Full Hour Glass</label>
+                                <input type="radio" name="bodyType" id="fullHourGlass" value="fullHourGlass">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="bodyType"><img src="/img/womans_body_type/invertedTriangle.jpg" alt="I'm sad" height="200px">Inverted Triangle</label>
+                                <input type="radio" name="bodyType" id="invertedTriangle" value="invertedTriangle">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="bodyType"><img src="/img/womans_body_type/leanColumn.jpg" alt="I'm sad" height="200px">Lean Column</label>
+                                <input type="radio" name="bodyType" id="leanColumn" value="leanColumn">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="bodyType"><img src="/img/womans_body_type/neatHourGlass.jpg" alt="I'm sad" height="200px">Neat Hour Glass</label>
+                                <input type="radio" name="bodyType" id="neatHourGlass" value="neatHourGlass">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="bodyType"><img src="/img/womans_body_type/pear.jpg" alt="I'm sad" height="200px">Pear</label>
+                                <input type="radio" name="bodyType" id="pear" value="pear">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="bodyType"><img src="/img/womans_body_type/rectangle.jpg" alt="I'm sad" height="200px">Rectangle</label>
+                                <input type="radio" name="bodyType" id="rectangle" value="rectangle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-3">
+                        <div class="offset-2  col-md-2">
+                            <input type="button" class="btn btn-lg btn-secondary" onclick="indexPage();" value="Cancel" id="cancel">
+                        </div>
+                        <div class="col-md-2">
+                            <input type="button" class="btn btn-lg btn-primary" onclick="submitForm();" value="Submit" id="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
