@@ -109,7 +109,7 @@ function checkExist(){
         // Hide alert after 3 seconds
         setTimeout(function(){
             document.getElementById('AlreadySubmitted').style.display = 'none';
-        },3000);
+        },10000);
         console.log('userExist');
         document.getElementById('email').value=signInEmail;
         document.getElementById('age').value=childData.age;
@@ -292,7 +292,7 @@ function submitData(){
         // Hide alert after 3 seconds
         setTimeout(function(){
             document.getElementById('successfullySubmitted').style.display = 'none';
-        },3000);
+        },10000);
 
         location.reload();
     }
