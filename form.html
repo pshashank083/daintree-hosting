@@ -11,20 +11,18 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
    
-    <title>Document</title>
+    <title>DainTree</title>
 </head>
 <body onload="showField();">
     <div class ="container mt-3">
         <h1 class="brand "><span ><b> DainTree Form</b></span> </h1>
         <div class="wrapper">
             <div class="company-info">
-                <!-- <h3 class="col-sm-9 " style="font-size: 40px; font-weight: 700;">Dain Tree </h3> -->
-                
                 <div class="row ">
-                    <div class="col-2 col-md-2 col-sm-2 offset-md-1 img">
-                        <img class="logoimg" src="img/logo1.png" alt="logo" style="width: 10vw; height: 20vh;">
+                    <div class="col-4 col-md-4 col-sm-4 offset-md-1 img">
+                        <img class="logoimg" src="img/logo1.png" alt="logo" style="height: 20vh;">
                     </div>
-                <div class="col-9 offset-sm-2 col-md-9 col-sm-9">
+                <div class="col-7 offset-sm-2 col-md-7 col-sm-7">
                    <button class="btn btn-info loginbtn mt-5" id="login"><b style="font-size: 18px;">Google Login</b> </button>
                    <button class="btn btn-warning logoutbtn mt-5 " id="logout" ><b style="font-size: 18px;">Logout</b> </button>
                 </div>
@@ -312,7 +310,7 @@
                         </select>
                     </p>
                     <p class="full">
-                            <button type="button" class="btn btn-info text-white" onclick="nextPage();" value="Next" id="next" style="border-radius: 10px;"><b>NEXT</b></button>
+                         <button type="button" class="btn btn-info text-white mt-3" onclick="nextPage();" value="Next" id="next" style="border-radius: 10px;"><b>NEXT</b></button>
                     </p>
                 </div>
                       
@@ -422,28 +420,28 @@
                             <label for="femaleFaceType" class="col-form-label">Face Type:</label> 
                             <div class="col-12 radio-toolbar">
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceType" class="zoom" id="circle" value="circle">
-                                    <label for="circle"><img src="/img/womans_face_type/circle.jpg" alt="circle" height="160px"></label>
+                                    <input type="radio" name="femaleFaceType" class="zoom" id="circlew" value="circle">
+                                    <label for="circlew"><img src="/img/womans_face_type/circle.jpg" alt="circle" height="160px"></label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceType" class="zoom" id="diamond" value="diamond">
-                                    <label for="diamond"><img src="/img/womans_face_type/diamond.jpg" alt="I'm sad" height="160px"></label>
+                                    <input type="radio" name="femaleFaceType" class="zoom" id="diamondw" value="diamond">
+                                    <label for="diamondw"><img src="/img/womans_face_type/diamond.jpg" alt="I'm sad" height="160px"></label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceType" class="zoom" id="oval" value="oval">
-                                    <label for="oval"><img src="/img/womans_face_type/oval.jpg" alt="I'm sad" height="160px"></label>
+                                    <input type="radio" name="femaleFaceType" class="zoom" id="ovalw" value="oval">
+                                    <label for="ovalw"><img src="/img/womans_face_type/oval.jpg" alt="I'm sad" height="160px"></label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceType" class="zoom" id="round" value="round">
-                                    <label for="round"><img src="/img/womans_face_type/round.jpg" alt="I'm sad" height="160px"></label>
+                                    <input type="radio" name="femaleFaceType" class="zoom" id="roundw" value="round">
+                                    <label for="roundw"><img src="/img/womans_face_type/round.jpg" alt="I'm sad" height="160px"></label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceType" class="zoom" id="square" value="square">
-                                    <label for="square"></label> <img src="/img/womans_face_type/square.jpg" alt="I'm sad" height="160px"></label>
+                                    <input type="radio" name="femaleFaceType" class="zoom" id="squarew" value="square">
+                                    <label for="squarew"><img src="/img/womans_face_type/square.jpg" alt="I'm sad" height="160px"></label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceType" class="zoom" id="triangle" value="triangle">
-                                    <label for="triangle"><img src="/img/womans_face_type/triangle.jpg" alt="I'm sad" height="160px"> </label>
+                                    <input type="radio" name="femaleFaceType" class="zoom" id="trianglew" value="triangle">
+                                    <label for="trianglew"><img src="/img/womans_face_type/triangle.jpg" alt="I'm sad" height="160px"></label>
                                 </div>
                             </div>
                         </div>
@@ -451,28 +449,28 @@
                             <label for="femaleFaceTone" class="col-form-label">Face Tone:</label> 
                             <div class="col-12 radio-toolbar">
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceTone" class="zoom" id="dark" value="dark">
-                                    <label for="dark"><img src="/img/womans_face_tone/dark.jpg" alt="I'm sad" height="160px"></label>
+                                    <input type="radio" name="femaleFaceTone" class="zoom" id="darkw" value="dark">
+                                    <label for="darkw"><img src="/img/womans_face_tone/dark.jpg" alt="I'm sad" height="160px"></label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceTone" class="zoom" id="exotic" value="exotic">
-                                    <label for="exotic"><img src="/img/womans_face_tone/exotic.jpg" alt="I'm sad" height="160px"> </label>
+                                    <input type="radio" name="femaleFaceTone" class="zoom" id="exoticw" value="exotic">
+                                    <label for="exoticw"><img src="/img/womans_face_tone/exotic.jpg" alt="I'm sad" height="160px"> </label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceTone" class="zoom" id="medium" value="medium">
-                                    <label for="medium"><img src="/img/womans_face_tone/medium.jpg" alt="I'm sad" height="160px"> </label>
+                                    <input type="radio" name="femaleFaceTone" class="zoom" id="mediumw" value="medium">
+                                    <label for="mediumw"><img src="/img/womans_face_tone/medium.jpg" alt="I'm sad" height="160px"> </label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceTone" class="zoom" id="normal" value="normal">
-                                    <label for="normal"><img src="/img/womans_face_tone/normal.jpg" alt="I'm sad" height="160px">  </label>
+                                    <input type="radio" name="femaleFaceTone" class="zoom" id="normalw" value="normal">
+                                    <label for="normalw"><img src="/img/womans_face_tone/normal.jpg" alt="I'm sad" height="160px">  </label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceTone" class="zoom" id="light" value="light">
-                                    <label for="femaleFaceTone"><img src="/img/womans_face_tone/light.jpg" alt="I'm sad" height="160px"></label>
+                                    <input type="radio" name="femaleFaceTone" class="zoom" id="lightw" value="light">
+                                    <label for="lightw"><img src="/img/womans_face_tone/light.jpg" alt="I'm sad" height="160px"></label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleFaceTone" class="zoom" id="tan" value="tan">
-                                    <label for="femaleFaceTone"> <img src="/img/womans_face_tone/tan.jpg" alt="I'm sad" height="160px"></label>
+                                    <input type="radio" name="femaleFaceTone" class="zoom" id="tanw" value="tan">
+                                    <label for="tanw"> <img src="/img/womans_face_tone/tan.jpg" alt="I'm sad" height="160px"></label>
                                 </div>
                             </div>
                         </div>
@@ -480,34 +478,34 @@
                             <label for="femaleBodyType" class=" col-form-label">Body Type:</label> 
                             <div class="col-12 radio-toolbar">
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleBodyType" class="zoom" id="apple" value="apple">
-                                    <label for="apple"><img src="/img/womans_body_type/apple.jpg" alt="I'm sad" class="bodytype"></label>
+                                    <input type="radio" name="femaleBodyType" class="zoom" id="applew" value="apple">
+                                    <label for="applew"><img src="/img/womans_body_type/apple.jpg" alt="I'm sad" class="bodytype" height="200px"></label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleBodyType" class="zoom" id="fullHourGlass" value="fullHourGlass">
-                                    <label for="fullHourGlass"><img src="/img/womans_body_type/fullHourGlass.jpg" alt="I'm sad" class="bodytype"></label>
+                                    <input type="radio" name="femaleBodyType" class="zoom" id="fullHourGlassw" value="fullHourGlass">
+                                    <label for="fullHourGlassw"><img src="/img/womans_body_type/fullHourGlass.jpg" alt="I'm sad" class="bodytype" height="200px"></label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleBodyType" class="zoom" id="invertedTriangle" value="invertedTriangle">
-                                    <label for="invertedTriangle"><img src="/img/womans_body_type/invertedTriangle.jpg" alt="I'm sad" class="bodytype"></label>
+                                    <input type="radio" name="femaleBodyType" class="zoom" id="invertedTrianglew" value="invertedTriangle">
+                                    <label for="invertedTrianglew"><img src="/img/womans_body_type/invertedTriangle.jpg" alt="I'm sad" class="bodytype" height="200px"></label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleBodyType" class="zoom" id="neatHourGlass" value="neatHourGlass">
-                                    <label for="neatHourGlass"><img src="/img/womans_body_type/neatHourGlass.jpg" alt="I'm sad" class="bodytype"> </label>
+                                    <input type="radio" name="femaleBodyType" class="zoom" id="neatHourGlassw" value="neatHourGlass">
+                                    <label for="neatHourGlassw"><img src="/img/womans_body_type/neatHourGlass.jpg" alt="I'm sad" class="bodytype" height="200px"> </label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleBodyType" class="zoom" id="pear" value="pear">
-                                    <label for="pear"><img src="/img/womans_body_type/pear.jpg" alt="I'm sad" class="bodytype"></label>
+                                    <input type="radio" name="femaleBodyType" class="zoom" id="peawr" value="pear">
+                                    <label for="pearw"><img src="/img/womans_body_type/pear.jpg" alt="I'm sad" class="bodytype" height="200px"></label>
                                 </div>
                                 <div class="col-4 col-md-3  col-sm-4 form-check form-check-inline">
-                                    <input type="radio" name="femaleBodyType" class="zoom" id="rectangle" value="rectangle">
-                                    <label for="rectangle"><img src="/img/womans_body_type/rectangle.jpg" alt="I'm sad" class="bodytype"></label>
+                                    <input type="radio" name="femaleBodyType" class="zoom" id="rectanglew" value="rectangle">
+                                    <label for="rectanglew"><img src="/img/womans_body_type/rectangle.jpg" alt="I'm sad" class="bodytype" height="200px"></label>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="alert" id="successfullySubmitted">Your data is successfully submitted</div>
-                        <p class=" full">
+                        <p>
                             <button type="button" class="btn btn-warning text-white mt-3" onclick="reloadPage();" value="Cancel" id="cancel" style="display: none; border-radius: 10px;">Cancel</button>
                             <button type="button" class="btn btn-info text-white mt-2" onclick="submitData();" value="Submit" id="submit" style="display: none; border-radius: 10px;"> Submit</button>
                         </p>
